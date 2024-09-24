@@ -1,0 +1,21 @@
+4.6 :
+even_count = 0
+total_count = 0
+while (user_input := input()):
+    if user_input == "stop":
+        if total_count == 0:
+            print("At least one accpeted number should be provided.")
+            continue
+        break
+    if user_input. isdigit():
+        number = int(user_input)
+        if 0 <= number <= 100:
+            total_count += 1
+        if number % 2 == 0:
+            even_count += 1
+        else:
+            print("Only numbers between 0 and 100 are accepted.")
+    else:
+        print("Only numbers between 0 and 100 are accepted.")
+if total_count > 0:
+    print(even_count)
