@@ -1,0 +1,13 @@
+quiz# 4.5:
+right_value = 50
+num_guesses = 0
+while True:
+    guess = int(input("Enter a guess:\n"))
+    num_guesses += 1
+    if guess == right_value:
+        print("Correct!It took you", num_guesses, "guesses.")
+        break
+    elif guess < right_value:
+        print("Your guess is too low")
+    else:
+        print("Your guess is too high")
